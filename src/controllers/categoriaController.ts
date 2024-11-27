@@ -1,10 +1,5 @@
 import { Request, Response } from "express";
-import {
-  createCategoria,
-  getCategorias,
-  deleteCategoria,
-  updateCategoria,
-} from "../models/categoriaModel";
+import { createCategoria, getCategorias, deleteCategoria, updateCategoria } from "../models/categoriaModel";
 
 // Função para criar uma categoria
 export const postCategoria = async (req: Request, res: Response) => {

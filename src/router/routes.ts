@@ -4,6 +4,9 @@ import * as modeloController from "../controllers/modeloController";
 import * as marcaController from "../controllers/marcaController";
 import * as veiculoController from "../controllers/veiculoController";
 import * as manutencaoController from "../controllers/manutencaoController";
+import * as contratoLocacaoController from "../controllers/contratoLocacaoController";
+import * as ocorrenciaController from "../controllers/ocorrenciaController";
+import * as pagamentoController from "../controllers/pagamentoController";
 
 const router = Router();
 
@@ -40,5 +43,23 @@ router.post("/manutencao", manutencaoController.postManutencao);
 router.get("/manutencao", manutencaoController.getManutencao);
 router.put("/manutencao/:id", manutencaoController.putManutencao);
 router.delete("/manutencao/:id", manutencaoController.deleteManutencaoController);
+
+//Rotas ContratoLocacao
+router.post("/contrato-locacao", contratoLocacaoController.postContratoLocacao);
+router.get("/contrato-locacao", contratoLocacaoController.getContratoLocacao);
+router.put("/contrato-locacao/:id", contratoLocacaoController.putContratoLocacao);
+router.delete("/contrato-locacao/:id", contratoLocacaoController.deleteContratoLocacaoController);
+
+//Rotas Ocorrencia
+router.post("/ocorrencia", ocorrenciaController.postOcorrencia);
+router.get("/ocorrencia", ocorrenciaController.getOcorrencia);
+router.put("/ocorrencia/:id", ocorrenciaController.putOcorrencia);
+router.delete("/ocorrencia/:id", ocorrenciaController.deleteOcorrenciaController);
+
+//Rotas Pagamento
+router.post("/pagamento", pagamentoController.postPagamento);
+router.get("/pagamento", pagamentoController.getPagamento);
+router.put("/pagamento/:id", pagamentoController.putPagamento);
+router.delete("/pagamento/:id", pagamentoController.deletePagamentoController);
 
 export default router;

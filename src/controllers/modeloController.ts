@@ -1,10 +1,5 @@
 import { Request, Response } from "express";
-import {
-  createModelo,
-  getModelos,
-  deleteModelo,
-  updateModelo,
-} from "../models/modeloModel";
+import { createModelo, getModelos, deleteModelo, updateModelo } from "../models/modeloModel";
 
 // Função para criar um modelo
 export const postModelo = async (req: Request, res: Response) => {
